@@ -24,30 +24,31 @@ pip install -r requirements.txt
 
 ## Running the Script
 
-1. Download the dataset.
+### 1. Download the dataset.
+
 The dataset we used for training and testing our model is the Conversational Question Answering (CoQA) dataset [here](https://stanfordnlp.github.io/coqa/).
 
 We download our data to a `data/` folder.
 
-2. Preprocess the data.
+### 2. Preprocess the data.
 
 ```bash
 python cqg_preprocess.py
 ```
-Split the data into conversation histories, rationales, targets and answers. The data consists of parallel source (src) and target (tgt) data containing one sentence per line with tokens separated by a space.
+This is to split the data into conversation histories, rationales, targets and answers. The processed data consists of parallel source (src) and target (tgt) data containing one sentence per line with tokens separated by a space.
 
 ```bash
 python preprocess.py -train_src data/coqa-cqg-src.train.txt -train_history data/coqa-cqg-history.train.txt -train_ans data/coqa-cqg-ans.train.txt -train_tgt data/coqa-cqg-tgt.train.txt -valid_src data/coqa-cqg-src.dev.txt -valid_history data/coqa-cqg-history.dev.txt -valid_ans data/coqa-cqg-ans.dev.txt -valid_tgt data/coqa-cqg-tgt.dev.txt -save_data data/coqa-cqg --share_vocab --dynamic_dict  
 ```
 
-After running the preprocessing, the following files are generated:
+This is to transform the data to indices, which means the system doesn't need to touch the words themselves. After running the preprocessing, the following files are generated:
 
 * `coqa-cqg.train.0.pt`: serialized PyTorch file containing training data
 * `coqa-cqg.valid.0.pt`: serialized PyTorch file containing validation data
 * `coqa-cqg.vocab.pt`: serialized PyTorch file containing vocabulary data
 
 
-2. Train and test model for ReDR.
+### 3. Train and test the model of ReDR.
 ```
 python train.py -data data/coqa-cqg -save_model out_model/
 ```
