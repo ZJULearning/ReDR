@@ -2,18 +2,12 @@
 
 Code for the ACL 2019 paper "Reinforced Dynamic Reasoning for Conversational Question Generation". If you use this code as part of any published research, please cite the following paper. This code is based on the [OpenNMT](https://github.com/OpenNMT/OpenNMT-py).
 
-**"Reinforced Dynamic Reasoning for Conversational Question Generation"**
-Boyuan Pan, Hao Li, Ziyu Yao, Deng Cai, Huan Sun. _ACL (2019)_ 
 
-```
-@inproceedings{pan2019reinforced,
-  title={Reinforced Dynamic Reasoning for Conversational Question Generation},
-  author={Pan, Boyuan and Li, Hao and Yao, Ziyu and Cai, Deng and Sun, Huan},
-  booktitle={Proceedings of the 57th Conference of the Association for Computational Linguistics},
-  pages={2114--2124},
-  year={2019}
-}
-```
+
+## Introduction
+
+This paper investigates a new task named Conversational Question Generation (CQG) which is to generate a question based on a passage and a conversation history (i.e., previous turns of question-answer pairs). Towards that end, we propose a new approach named Reinforced Dynamic Reasoning (ReDR) network, which is based on the general encoder-decoder framework but incorporates a reasoning procedure in a dynamic manner to better understand what has been asked and what to ask next about the passage.
+
 ## Required
 
 All dependencies can be installed via:
@@ -58,3 +52,17 @@ python generate.py  -src data/coqa-cqg-src.dev.txt -history data/coqa-cqg-histor
 
 If you want to train on GPU, you need to set, as an example: CUDA_VISIBLE_DEVICES=1,3 -world_size 2 -gpu_ranks 0 1 to use (say) GPU 1 and 3 on this node only. 
 
+## Reference
+
+**"Reinforced Dynamic Reasoning for Conversational Question Generation"**
+Boyuan Pan, Hao Li, Ziyu Yao, Deng Cai, Huan Sun. _ACL (2019)_ 
+
+```
+@inproceedings{pan2019reinforced,
+  title={Reinforced Dynamic Reasoning for Conversational Question Generation},
+  author={Pan, Boyuan and Li, Hao and Yao, Ziyu and Cai, Deng and Sun, Huan},
+  booktitle={Proceedings of the 57th Conference of the Association for Computational Linguistics},
+  pages={2114--2124},
+  year={2019}
+}
+```
