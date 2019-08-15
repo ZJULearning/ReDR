@@ -1,12 +1,6 @@
 # ReDR
 
-Code for the ACL 2019 paper [Reinforced Dynamic Reasoning for Conversational Question Generation](https://www.aclweb.org/anthology/P19-1203). If you use this code as part of any published research, please cite the following paper. This code is based on the [OpenNMT](https://github.com/OpenNMT/OpenNMT-py).
-
-
-
-## Introduction
-
-This paper investigates a new task named Conversational Question Generation (CQG) which is to generate a question based on a passage and a conversation history (i.e., previous turns of question-answer pairs). Towards that end, we propose a new approach named Reinforced Dynamic Reasoning (ReDR) network, which is based on the general encoder-decoder framework but incorporates a reasoning procedure in a dynamic manner to better understand what has been asked and what to ask next about the passage.
+Code for the ACL 2019 paper [Reinforced Dynamic Reasoning for Conversational Question Generation](https://www.aclweb.org/anthology/P19-1203). This paper investigates a new task named Conversational Question Generation (CQG) which is to generate a question based on a passage and a conversation history (i.e., previous turns of question-answer pairs). Towards that end, we propose a new approach named Reinforced Dynamic Reasoning (ReDR) network, which is based on the general encoder-decoder framework but incorporates a reasoning procedure in a dynamic manner to better understand what has been asked and what to ask next about the passage. Our code is based on the [OpenNMT](https://github.com/OpenNMT/OpenNMT-py).
 
 ## Required
 
