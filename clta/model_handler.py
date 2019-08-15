@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # coding: utf-8
 # --------------------------------------------------------------------------------
-#     File Name           :     src/models/seq2seq/model_handler.py
+#     File Name           :     model_handler.py
 #     Created By          :     hao
 #     Description         :
 # --------------------------------------------------------------------------------
