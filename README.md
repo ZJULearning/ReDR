@@ -1,6 +1,6 @@
 # ReDR
 
-Code for the ACL 2019 paper "Reinforced Dynamic Reasoning for Conversational Question Generation". If you use this code as part of any published research, please cite the following paper. This code is based on the [OpenNMT](https://github.com/OpenNMT/OpenNMT-py).
+Code for the ACL 2019 paper [Reinforced Dynamic Reasoning for Conversational Question Generation](https://www.aclweb.org/anthology/P19-1203). If you use this code as part of any published research, please cite the following paper. This code is based on the [OpenNMT](https://github.com/OpenNMT/OpenNMT-py).
 
 
 
