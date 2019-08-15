@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # coding: utf-8
 # --------------------------------------------------------------------------------
-#     File Name           :     src/models/drqa/config.py
+#     File Name           :     config.py
 #     Created By          :     hao
 #     Description         :
 # --------------------------------------------------------------------------------
