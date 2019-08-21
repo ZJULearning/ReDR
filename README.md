@@ -44,7 +44,7 @@ python train.py -data data/coqa-cqg -save_model out_model/
 python generate.py  -src data/coqa-cqg-src.dev.txt -history data/coqa-cqg-history.dev.txt -tgt data/coqa-cqg-tgt.dev.txt -replace_unk -model out_model/_step_XXXXX.pt -output pred.txt
 ```
 
-If you want to train on GPU, you need to set, as an example: CUDA_VISIBLE_DEVICES=1,3 -world_size 2 -gpu_ranks 0 1 to use (say) GPU 1 and 3 on this node only. 
+If you want to train on GPU, you need to set, as an example: `CUDA_VISIBLE_DEVICES=1,3 -world_size 2 -gpu_ranks 0 1` to use (say) GPU 1 and 3 on this node only. 
 
 ## Reference
 
