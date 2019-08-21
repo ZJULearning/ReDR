@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 The dataset we used for training and testing our model is the Conversational Question Answering (CoQA) dataset [here](https://stanfordnlp.github.io/coqa/). We download our data to a `data/` folder.
 
-We also have a pre-trained [DrQA model](https://drive.google.com/drive/folders/1E_U7yKFHAzPKihhIOFg15y39Ac1ml6k_) to produce the F1 scores as the reward function. We download the model to a `drqa_param/` folder.
+We also have a pre-trained [QA model](https://drive.google.com/drive/folders/1E_U7yKFHAzPKihhIOFg15y39Ac1ml6k_) to produce the F1 scores as the reward function. We download the model to a `drqa_param/` folder.
 
 ### 2. Preprocess the data.
 
